@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace laboratory_exercises
+namespace csharp_laboratory_classes
 {
     class Program
     {

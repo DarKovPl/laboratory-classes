@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("laboratory_exercises")]
+[assembly: AssemblyTitle("csharp_laboratory_classes")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("laboratory_exercises")]
+[assembly: AssemblyProduct("csharp_laboratory_classes")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("aa1deaaf-23b0-48d5-a814-c1a986854088")]
+[assembly: Guid("d4b7a5f7-ef6e-4acd-9db3-2d2981e61f48")]
 
 // Version information for an assembly consists of the following four values:
 //

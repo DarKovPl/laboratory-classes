@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA1DEAAF-23B0-48D5-A814-C1A986854088}</ProjectGuid>
+    <ProjectGuid>{D4B7A5F7-EF6E-4ACD-9DB3-2D2981E61F48}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>laboratory_exercises</RootNamespace>
-    <AssemblyName>laboratory_exercises</AssemblyName>
+    <RootNamespace>csharp_laboratory_classes</RootNamespace>
+    <AssemblyName>csharp_laboratory_classes</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
