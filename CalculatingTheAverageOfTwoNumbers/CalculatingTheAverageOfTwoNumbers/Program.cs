@@ -24,7 +24,7 @@ namespace Adding
                 float average;
                 average = Convert.ToSingle((x + y) / 2);
 
-                Console.WriteLine("The mean of the first number is {0}, the second is {1} and the average of two number is {2}", x, y, average);
+                Console.WriteLine("The first number is {0}, the second is {1}, and the average of two numbers is {2}", x, y, average);
                 Console.ReadKey();
             }
             catch (Exception handle)
