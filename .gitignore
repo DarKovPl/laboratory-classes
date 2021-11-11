@@ -389,4 +389,6 @@ FodyWeavers.xsd
 
 # My ignore stuff
 laboratory_classes/
+QuadraticEquation/
+CalculatingTheAverageOfTwoNumbers/
 
