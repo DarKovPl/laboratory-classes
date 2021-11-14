@@ -1,0 +1,20 @@
+﻿<Window x:Class="WordSearchengineInText.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordSearchengineInText"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="labelOne" Content="Search:" HorizontalAlignment="Left" Margin="229,42,0,0" VerticalAlignment="Top" Height="42" Width="92" FontSize="21"/>
+        <Label x:Name="labelTwo" Opacity="0.20" Content="Output" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Height="99" Width="780" FontSize="21" RenderTransformOrigin="0.509,2.402"/>
+        <TextBox x:Name="textBoxOne" HorizontalAlignment="Left" Height="42" Margin="326,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="19"/>
+        <TextBox x:Name="textBoxTwo" HorizontalAlignment="Center" Height="174" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" FontSize="19" 
+                 Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. 
+                 Morbi quis commodo odio aenean sed adipiscing. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas. Dignissim enim sit amet venenatis urna cursus eget nunc. Et tortor at risus viverra adipiscing at. 
+                 Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Pretium quam vulputate dignissim suspendisse. Elit eget gravida cum sociis natoque. Amet nisl suscipit adipiscing bibendum" 
+                 TextChanged="TextBoxTwo_TextChanged" MouseLeftButtonDown="TextBoxTwo_MouseLeftButtonDown" MouseDoubleClick="TextBoxTwo_MouseLeftButtonDown" VerticalScrollBarVisibility="Visible"/>
+
+    </Grid>
+</Window>

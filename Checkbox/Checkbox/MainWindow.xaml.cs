@@ -32,7 +32,6 @@ namespace Checkbox
         private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Unmarked");
-
         }
     }
 }
