@@ -13,7 +13,10 @@ namespace QuadraticEquationHomeWork
             
             int a, b, c;
             double delta, x_0, x_1, x_2;
-
+            bool condition = true;
+            
+            while (condition)
+            
             try
             {
                 Console.WriteLine("Enter the number a: ");
@@ -38,22 +41,25 @@ namespace QuadraticEquationHomeWork
                         x_1 = (-b + Math.Sqrt(delta)) / (2 * a);
                         x_2 = (-b - Math.Sqrt(delta)) / (2 * a);
 
-                        Console.WriteLine("From factors: a:{0}, b:{1}, c:{2} delta is {3}. X1={4} and X2={5} ", a, b, c, delta, x_1, x_2);
+                        Console.WriteLine("Factors: a={0}, b={1}, c={2}.\nDelta={3}.\nX1={4}\nX2={5} ", a, b, c, delta, x_1, x_2);
                         Console.ReadKey();
+                        condition = false;
                     }
                     
                     else
                     {
                         x_0 = -b / (2 * a);
-                        Console.WriteLine("From factors: a:{0}, b:{1}, c:{2} delta is {3}. X1 and X2 are equals: {4}", a, b, c, delta, x_0);
+                        Console.WriteLine("Factors: a={0}, b={1}, c={2}.\nDelta={3}.\nX1 and X2 are equals: {4}", a, b, c, delta, x_0);
                         Console.ReadKey();
+                        condition = false;
                     }
                 }
 
                 else
                 {
-                    Console.WriteLine("Delta is below zero ({0}) and there is no square roots in this equation", delta);
+                    Console.WriteLine("Delta is below zero ({0}), and there are no square roots in this equation.", delta);
                     Console.ReadKey();
+                    condition = false;
                 }
                 
             }
@@ -61,6 +67,7 @@ namespace QuadraticEquationHomeWork
             catch (ArithmeticException e)
             {
                 Console.WriteLine(e.Message);
+                Console.WriteLine("Enter the key");
                 Console.ReadKey();
             }
             
@@ -68,6 +75,7 @@ namespace QuadraticEquationHomeWork
             {
                 Console.WriteLine(e.Message);
                 Console.ReadKey();
+                condition = false;
             }
         }
     }
