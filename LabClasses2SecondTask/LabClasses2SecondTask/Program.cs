@@ -10,14 +10,20 @@ namespace LabClasses2SecondTask
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enum type ConsoleColor is for changing colour change.");
+            Console.WriteLine("enum type ConsoleColor is for changing colour change.\n\n");
             Console.WriteLine("Text before colour changed.");
             
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Yellow;
             
+            Console.WriteLine("Text after colour changed.\n\n");
+
+            Console.WriteLine("Text before colour changed.");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Text after colour changed.");
-            
+
+
             Console.ReadKey();
         }
     }
