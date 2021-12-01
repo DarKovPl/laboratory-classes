@@ -29,6 +29,10 @@ namespace LabClasses2SixthTask
 
             Console.WriteLine(i);
 
+            ExplicitConversion ex = new ExplicitConversion();
+            Console.WriteLine(ex.DisplayVariable);           
+
+
             Console.ReadKey();
 
 
