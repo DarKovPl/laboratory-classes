@@ -30,7 +30,6 @@ namespace LabClasses2SeventhTask
             Console.WriteLine("i-- = " + (i--));
             Console.WriteLine("--i = " + (--i));
 
-
             Console.ReadKey();
         }
     }
