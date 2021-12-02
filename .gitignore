@@ -388,23 +388,3 @@ FodyWeavers.xsd
 *.sln.iml
 
 # My ignore stuff
-laboratory_classes/
-QuadraticEquation/
-CalculatingTheAverageOfTwoNumbers/
-Checkbox/
-DivisionByZero/
-LabClasses2FirstTask/
-LabClasses2SecondTask/
-LabClasses2ThirdTask/
-LeapYear/
-QuadraticEquationHomeWork/
-QuadraticEquation_/
-ShowingTheCurrentTime/
-TicTacToeGame/
-WordSearchengineInText/
-LabClasses2FourthTask/
-LabClasses2FifthTask/
-LabClasses2SixthTask/
-LabClasses2SeventhTask/
-LabClasses2EighthTask/
-
