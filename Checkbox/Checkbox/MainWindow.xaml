@@ -1,0 +1,12 @@
+﻿<Window x:Class="Checkbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Checkbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="400">
+    <Grid Height="Auto" Margin="0,0,0,2">
+        <CheckBox Content="Click checkbox" HorizontalAlignment="Left" VerticalAlignment="Top" Height="47" Width="284" FontSize="26" Margin="10,64,0,0" Focusable="False" IsChecked="False" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" RenderTransformOrigin="0.504,0.547"/>
+    </Grid>
+</Window>

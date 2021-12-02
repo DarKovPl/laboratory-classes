@@ -1,0 +1,16 @@
+﻿<Window x:Class="ShowingTheCurrentTime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShowingTheCurrentTime"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="helloWorldLabel" Content="Witaj Świecie!!!" HorizontalAlignment="Center" Margin="0,86,0,0" VerticalAlignment="Top" Height="59" Width="183" FontSize="26"/>
+        <Button Content="ENG Translator" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Width="180" Height="59" FontSize="25" Click="Button_Click"/>
+        <Button Content="PL Translator" HorizontalAlignment="Center" VerticalAlignment="Top" Width="180" Margin="0,278,0,0" Height="59" FontSize="25" Click="Button_Click_1"/>
+        <Label x:Name="timeNow" Content="Current Time" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" Height="54" Width="524" FontSize="32" MouseEnter="timeNow_MouseEnter" MouseLeave="timeNow_MouseLeave"/>
+
+    </Grid>
+</Window>
