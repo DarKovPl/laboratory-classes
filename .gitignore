@@ -389,3 +389,5 @@ FodyWeavers.xsd
 
 # My files and folders
 QuadraticEquationHomeWork/
+.gitignore
+
