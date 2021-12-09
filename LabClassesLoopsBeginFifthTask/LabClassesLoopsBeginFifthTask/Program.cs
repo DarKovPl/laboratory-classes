@@ -19,7 +19,9 @@ namespace LabClassesLoopsBeginFifthTask
                 counter++;
                 totalDeposit += (j + k);
                 toClearOfTheDebt += (j + k);
+                
                 Console.WriteLine("The total amount of the balance: {0}.\nTotal cash deposit so far:  {1}.\nRepayment day: {2}\n", toClearOfTheDebt, totalDeposit, counter);
+            
             } while (toClearOfTheDebt <= 0);
 
             Console.ReadKey();
