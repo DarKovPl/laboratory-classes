@@ -23,7 +23,7 @@ namespace LabClasses3LoopsBeginNinthTask
                     string text = String.Join("+", array);
                     Console.WriteLine(text);
                     
-                    if (array.Length < i)
+                    if (array.Length <= z)
                         Console.WriteLine(text + "=" + Convert.ToString(array.Sum()));
                     
                     Console.ReadKey();
