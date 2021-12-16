@@ -19,6 +19,7 @@ namespace LabClasses4LoopsBeingFifteenthTask
              if(i == n)
                 for (int z = 1; z <= i; z++)
                     {
+                       
                         string x = "X";
                         string o = "O";
                         int multiply = n / 2;
