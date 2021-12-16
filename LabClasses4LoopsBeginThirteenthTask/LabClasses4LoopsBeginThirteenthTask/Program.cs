@@ -17,7 +17,7 @@ namespace LabClasses4LoopsBeginThirteenthTask
             
             Console.WriteLine("Give me b:");
             int b = Convert.ToInt32(Console.ReadLine());
-            
+
             Console.WriteLine("  x | y");
             
             while (x <= 10)

@@ -18,8 +18,8 @@ namespace LabClasses4LoopsBeginEleventhTask
             {
                 array[i] = "X";
                 
-                List<string> list = array.ToList();
-                List <string> reverse = Enumerable.Reverse(list).ToList();
+                List<string> listOfStrings = array.ToList();
+                List <string> reverse = Enumerable.Reverse(listOfStrings).ToList();
                 
                 foreach(string item in reverse)
                 
