@@ -20,7 +20,7 @@ namespace LabClasses4LoopsBeginTwenty_secondTask
 
             while(a % b != 0)
             {
-                r = (a % b);
+                r = a % b;
                 a = b;
                 b = r;
                 if (a % b == 0)
@@ -28,6 +28,7 @@ namespace LabClasses4LoopsBeginTwenty_secondTask
             }
             if (r == 0)
                 Console.WriteLine(b);
+            
             Console.ReadKey();
         }
     }
