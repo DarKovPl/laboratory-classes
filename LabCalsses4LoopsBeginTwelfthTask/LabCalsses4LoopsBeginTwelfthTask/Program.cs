@@ -14,19 +14,29 @@ namespace LabCalsses4LoopsBeginTwelfthTask
             int n = Convert.ToInt32(Console.ReadLine());
             string[] array = new string[n];
 
-            for (int i = 0; array.Length > i; i++)
+            for (int z = 0; z < array.Length; z++)
             {
-                array[i] = "X";
-
-                List<string> list = array.ToList();
-                List<string> reverse = Enumerable.Reverse(list).ToList();
-
-                foreach (string item in reverse)
- 
-                    ///TO DO
+                array[z] = "X";
                 
-                Console.WriteLine();
-
+                if (z != array.Length - 1)
+                {
+                    for (int f = array.Length - 1; f >= 0; f--)
+                    {
+                        string output = " ";
+                        Console.Write($"{(((z == f) || (f == 0)) ? array[f] : output)}");
+                    }
+                    Console.WriteLine();
+                }
+                else
+                    Console.WriteLine($"{string.Join("", array)}");
             }
+
+            
+            Console.ReadKey();
+
+
+        }
+
     }
+
 }
