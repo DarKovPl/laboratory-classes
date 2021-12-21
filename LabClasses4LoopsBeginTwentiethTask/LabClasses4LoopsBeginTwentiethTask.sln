@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabClasses4LoopsBeginTwentiethTask", "LabClasses4LoopsBeginTwentiethTask\LabClasses4LoopsBeginTwentiethTask.csproj", "{282CB9E5-D838-4BCE-AF0E-6797C5A2BAB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{282CB9E5-D838-4BCE-AF0E-6797C5A2BAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282CB9E5-D838-4BCE-AF0E-6797C5A2BAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282CB9E5-D838-4BCE-AF0E-6797C5A2BAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282CB9E5-D838-4BCE-AF0E-6797C5A2BAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42509F09-FA64-45E3-B176-65FD3B43821F}
+	EndGlobalSection
+EndGlobal

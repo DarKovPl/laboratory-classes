@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabClasses2LoopsFirstTask", "LabClasses2LoopsFirstTask\LabClasses2LoopsFirstTask.csproj", "{125177C1-4B64-4825-B104-9B224FCCAC71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125177C1-4B64-4825-B104-9B224FCCAC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125177C1-4B64-4825-B104-9B224FCCAC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125177C1-4B64-4825-B104-9B224FCCAC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125177C1-4B64-4825-B104-9B224FCCAC71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {924501B6-2281-41CF-86FF-AC3879727500}
+	EndGlobalSection
+EndGlobal
