@@ -42,6 +42,12 @@ namespace TicTacToeWinFormsApp
             this.B2 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.A1 = new System.Windows.Forms.Button();
+            this.PlayerOne = new System.Windows.Forms.Label();
+            this.PlayerTwo = new System.Windows.Forms.Label();
+            this.Wins = new System.Windows.Forms.Label();
+            this.Wins2 = new System.Windows.Forms.Label();
+            this.whoseTurn = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +59,7 @@ namespace TicTacToeWinFormsApp
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(371, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(463, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -168,11 +174,70 @@ namespace TicTacToeWinFormsApp
             this.A1.UseVisualStyleBackColor = true;
             this.A1.Click += new System.EventHandler(this.buttons_clicker);
             // 
+            // PlayerOne
+            // 
+            this.PlayerOne.AutoSize = true;
+            this.PlayerOne.Location = new System.Drawing.Point(353, 121);
+            this.PlayerOne.Name = "PlayerOne";
+            this.PlayerOne.Size = new System.Drawing.Size(59, 13);
+            this.PlayerOne.TabIndex = 10;
+            this.PlayerOne.Text = "Player \"X\":";
+            // 
+            // PlayerTwo
+            // 
+            this.PlayerTwo.AutoSize = true;
+            this.PlayerTwo.Location = new System.Drawing.Point(353, 152);
+            this.PlayerTwo.Name = "PlayerTwo";
+            this.PlayerTwo.Size = new System.Drawing.Size(60, 13);
+            this.PlayerTwo.TabIndex = 11;
+            this.PlayerTwo.Text = "Player \"O\":";
+            // 
+            // Wins
+            // 
+            this.Wins.AutoSize = true;
+            this.Wins.Location = new System.Drawing.Point(416, 121);
+            this.Wins.Name = "Wins";
+            this.Wins.Size = new System.Drawing.Size(13, 13);
+            this.Wins.TabIndex = 12;
+            this.Wins.Text = "0";
+            // 
+            // Wins2
+            // 
+            this.Wins2.AutoSize = true;
+            this.Wins2.Location = new System.Drawing.Point(416, 152);
+            this.Wins2.Name = "Wins2";
+            this.Wins2.Size = new System.Drawing.Size(13, 13);
+            this.Wins2.TabIndex = 13;
+            this.Wins2.Text = "0";
+            // 
+            // whoseTurn
+            // 
+            this.whoseTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.whoseTurn.Location = new System.Drawing.Point(341, 232);
+            this.whoseTurn.Name = "whoseTurn";
+            this.whoseTurn.Size = new System.Drawing.Size(110, 86);
+            this.whoseTurn.TabIndex = 14;
+            this.whoseTurn.Text = "X";
+            this.whoseTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(263, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 353);
+            this.ClientSize = new System.Drawing.Size(463, 353);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.whoseTurn);
+            this.Controls.Add(this.Wins2);
+            this.Controls.Add(this.Wins);
+            this.Controls.Add(this.PlayerTwo);
+            this.Controls.Add(this.PlayerOne);
             this.Controls.Add(this.A1);
             this.Controls.Add(this.A2);
             this.Controls.Add(this.B2);
@@ -210,6 +275,12 @@ namespace TicTacToeWinFormsApp
         private System.Windows.Forms.Button B2;
         private System.Windows.Forms.Button A2;
         private System.Windows.Forms.Button A1;
+        private System.Windows.Forms.Label PlayerOne;
+        private System.Windows.Forms.Label PlayerTwo;
+        private System.Windows.Forms.Label Wins;
+        private System.Windows.Forms.Label Wins2;
+        private System.Windows.Forms.Label whoseTurn;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 

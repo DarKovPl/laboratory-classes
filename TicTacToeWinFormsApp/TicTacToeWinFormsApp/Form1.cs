@@ -14,6 +14,8 @@ namespace TicTacToeWinFormsApp
     {
 
         int counter = 0;
+        public int theXCounter = 0;
+        public int theOCounter = 0;
         bool playerTurn = true;
         
         public Form1()
@@ -63,6 +65,9 @@ namespace TicTacToeWinFormsApp
 
         private void CheckWinners()
         {
+            string whoTurn = (playerTurn) ? "X" : "O";
+            whoseTurn.Text = whoTurn.ToString();
+
             //  ---
             //  ---
             //  ---
@@ -85,8 +90,11 @@ namespace TicTacToeWinFormsApp
             if (strikethroug)
             {
                 string whoWins = (playerTurn) ? "O" : "X";
+                Wins.Text = (whoWins == "X") ? (++theXCounter).ToString() : theXCounter.ToString();
+                Wins2.Text = (whoWins == "O") ? (++theOCounter).ToString() : theOCounter.ToString();
                 MessageBox.Show($"Game win: {whoWins}");
                 
+
                 foreach (Control i in Controls)
                 {
                     try
@@ -106,6 +114,5 @@ namespace TicTacToeWinFormsApp
           
         }
 
-        
     }
 }
