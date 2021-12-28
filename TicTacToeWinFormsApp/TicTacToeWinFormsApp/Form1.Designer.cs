@@ -29,6 +29,7 @@ namespace TicTacToeWinFormsApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,8 @@ namespace TicTacToeWinFormsApp
             this.Wins = new System.Windows.Forms.Label();
             this.Wins2 = new System.Windows.Forms.Label();
             this.whoseTurn = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -220,19 +222,25 @@ namespace TicTacToeWinFormsApp
             this.whoseTurn.Text = "X";
             this.whoseTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // timer1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(263, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(0, 338);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(463, 23);
+            this.progressBar1.Step = 1;
+            this.progressBar1.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 353);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(463, 361);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.whoseTurn);
             this.Controls.Add(this.Wins2);
             this.Controls.Add(this.Wins);
@@ -280,7 +288,8 @@ namespace TicTacToeWinFormsApp
         private System.Windows.Forms.Label Wins;
         private System.Windows.Forms.Label Wins2;
         private System.Windows.Forms.Label whoseTurn;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
