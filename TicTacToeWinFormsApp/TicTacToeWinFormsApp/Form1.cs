@@ -16,7 +16,8 @@ namespace TicTacToeWinFormsApp
         int counter = 0;
         public int theXCounter = 0;
         public int theOCounter = 0;
-        bool playerTurn = true;
+        static bool chosedPlayer;
+        bool playerTurn = chosedPlayer;
         
         public Form1()
         {
@@ -24,6 +25,11 @@ namespace TicTacToeWinFormsApp
             progressBar1.Maximum = 80;
             timer1.Interval = 200;
             timer1.Tick += new EventHandler(timer1_Tick);
+        }
+
+        public static void pickPlayer(bool player)
+        {
+            chosedPlayer = player;
         }
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
@@ -152,6 +158,15 @@ namespace TicTacToeWinFormsApp
                 MessageBox.Show($"Time out. Player: '{whoTurn}' won the game.");
                 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            
+            Welcome form2 = new Welcome();
+            form2.ShowDialog();
+            timer1.Start();
         }
     }
 }
