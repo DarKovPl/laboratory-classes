@@ -219,7 +219,6 @@ namespace TicTacToeWinFormsApp
             this.whoseTurn.Name = "whoseTurn";
             this.whoseTurn.Size = new System.Drawing.Size(110, 86);
             this.whoseTurn.TabIndex = 14;
-            this.whoseTurn.Text = "X";
             this.whoseTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
@@ -230,6 +229,7 @@ namespace TicTacToeWinFormsApp
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(0, 338);
+            this.progressBar1.Maximum = 80;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(463, 23);
             this.progressBar1.Step = 1;

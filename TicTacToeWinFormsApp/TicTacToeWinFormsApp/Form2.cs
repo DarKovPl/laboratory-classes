@@ -17,9 +17,12 @@ namespace TicTacToeWinFormsApp
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void playButton_Click(object sender, EventArgs e)
         {
-            string marked = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name;
+
+            bool chosed = (theXPlayer.Checked);
+            Form1.pickPlayer(chosed);
+            this.Close();
         }
     }
 }

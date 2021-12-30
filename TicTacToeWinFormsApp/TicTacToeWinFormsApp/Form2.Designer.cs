@@ -51,19 +51,19 @@ namespace TicTacToeWinFormsApp
             // 
             this.theOPlayer.AutoSize = true;
             this.theOPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.theOPlayer.Location = new System.Drawing.Point(22, 106);
+            this.theOPlayer.Location = new System.Drawing.Point(69, 88);
             this.theOPlayer.Name = "theOPlayer";
             this.theOPlayer.Size = new System.Drawing.Size(43, 28);
             this.theOPlayer.TabIndex = 1;
-            this.theOPlayer.TabStop = true;
             this.theOPlayer.Text = "O";
             this.theOPlayer.UseVisualStyleBackColor = false;
             // 
             // theXPlayer
             // 
             this.theXPlayer.AutoSize = true;
+            this.theXPlayer.Checked = true;
             this.theXPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.theXPlayer.Location = new System.Drawing.Point(22, 30);
+            this.theXPlayer.Location = new System.Drawing.Point(69, 42);
             this.theXPlayer.Name = "theXPlayer";
             this.theXPlayer.Size = new System.Drawing.Size(42, 28);
             this.theXPlayer.TabIndex = 2;
@@ -79,18 +79,19 @@ namespace TicTacToeWinFormsApp
             this.playButton.TabIndex = 3;
             this.playButton.Text = "PLAY!!!";
             this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.theXPlayer);
             this.groupBox1.Controls.Add(this.theOPlayer);
-            this.groupBox1.Location = new System.Drawing.Point(627, 124);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.groupBox1.Location = new System.Drawing.Point(572, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(91, 165);
+            this.groupBox1.Size = new System.Drawing.Size(196, 165);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox1.Text = "Select who is first:";
             // 
             // Welcome
             // 

@@ -16,20 +16,20 @@ namespace TicTacToeWinFormsApp
         int counter = 0;
         public int theXCounter = 0;
         public int theOCounter = 0;
-        static bool chosedPlayer;
-        bool playerTurn = chosedPlayer;
-        
+        static bool playerTurn;
+       
+
         public Form1()
         {
             InitializeComponent();
-            progressBar1.Maximum = 80;
+            progressBar1.Maximum = 600;
             timer1.Interval = 200;
             timer1.Tick += new EventHandler(timer1_Tick);
         }
 
         public static void pickPlayer(bool player)
         {
-            chosedPlayer = player;
+             playerTurn= player;
         }
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace TicTacToeWinFormsApp
             counter = 0;
             progressBar1.Value = 0;
             timer1.Start();
-            whoseTurn.Text = "X";
+            whoseTurn.Text = (playerTurn) ? "X" : "O";
             
             foreach (Control i in Controls)
             {
@@ -69,7 +69,7 @@ namespace TicTacToeWinFormsApp
         {
             timer1.Start();
             Button button = (Button)sender;
-            button.Text = (playerTurn == true) ? "X" : "O";
+            button.Text = (playerTurn) ? "X" : "O";
             playerTurn = !playerTurn;
             button.Enabled = false;
             counter++;
@@ -133,11 +133,12 @@ namespace TicTacToeWinFormsApp
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value < 80)
+
+            if (progressBar1.Value < 600)
             {
-                progressBar1.Value += 1;
+                progressBar1.Value += 4;
             }
-            else if (progressBar1.Value == 80)
+            else 
             {
                 timer1.Stop();
                 foreach (Control i in Controls)
@@ -154,18 +155,20 @@ namespace TicTacToeWinFormsApp
                 }
 
 
-                string whoTurn = (playerTurn) ? "O" : "X";
-                MessageBox.Show($"Time out. Player: '{whoTurn}' won the game.");
-                
+                string whoWins = (playerTurn) ? "O" : "X";
+                Wins.Text = (whoWins == "X") ? (++theXCounter).ToString() : theXCounter.ToString();
+                Wins2.Text = (whoWins == "O") ? (++theOCounter).ToString() : theOCounter.ToString();
+                MessageBox.Show($"Time out. Player: '{whoWins}' won the game.");
+                progressBar1.Value = 0;
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Stop();
-            
             Welcome form2 = new Welcome();
             form2.ShowDialog();
+            whoseTurn.Text = (playerTurn) ? "X" : "O";
             timer1.Start();
         }
     }
