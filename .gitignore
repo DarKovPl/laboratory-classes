@@ -387,4 +387,9 @@ FodyWeavers.xsd
 .idea/
 *.sln.iml
 
+<<<<<<< HEAD
 # My files and folders
+=======
+# My own files and directories
+QuadraticEquationHomeWork/
+>>>>>>> c#_my_own_projects

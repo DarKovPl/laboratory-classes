@@ -1,0 +1,31 @@
+﻿<Window x:Class="TicTacToeGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="OO" Grid.Column="0" Grid.Row="0" Background="Gray" Click="ChangeBackground_0"></Button>
+        <Button Name="IO" Grid.Column="1" Grid.Row="0" Background="Gray" Click="ChangeBackground_1"></Button>
+        <Button Name="ZO" Grid.Column="2" Grid.Row="0" Background="Gray" Click="ChangeBackground_2"></Button>
+        <Button Name="OI" Grid.Column="0" Grid.Row="1" Background="Gray" Click="ChangeBackground_3"></Button>
+        <Button Name="II" Grid.Column="1" Grid.Row="1" Background="Gray" Click="ChangeBackground_4"></Button>
+        <Button Name="ZI" Grid.Column="2" Grid.Row="1" Background="Gray" Click="ChangeBackground_5"></Button>
+        <Button Name="OZ" Grid.Column="0" Grid.Row="2" Background="Gray" Click="ChangeBackground_6"></Button>
+        <Button Name="IZ" Grid.Column="1" Grid.Row="2" Background="Gray" Click="ChangeBackground_7"></Button>
+        <Button Name="ZZ" Grid.Column="2" Grid.Row="2" Background="Gray" Click="ChangeBackground_8"></Button>
+    </Grid>
+</Window>

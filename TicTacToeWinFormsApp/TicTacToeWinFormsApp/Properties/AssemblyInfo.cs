@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("csharp_laboratory_classes")]
+[assembly: AssemblyTitle("TicTacToeWinFormsApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("csharp_laboratory_classes")]
+[assembly: AssemblyProduct("TicTacToeWinFormsApp")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d4b7a5f7-ef6e-4acd-9db3-2d2981e61f48")]
+[assembly: Guid("8335f105-86c6-45ab-9cd5-94c7ecaa5620")]
 
 // Version information for an assembly consists of the following four values:
 //
